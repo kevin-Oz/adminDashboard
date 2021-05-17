@@ -25,3 +25,19 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Run with Docker.
+
+Build the project
+```
+npm run build
+```
+Create the docker image (Nginx)
+```
+docker build -t admin/dash .
+```
+Execute the container 
+```
+docker run -d --rm --name admin-container -p 127.0.0.1:4000:80 -t admin/dash 
+```
+

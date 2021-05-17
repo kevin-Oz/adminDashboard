@@ -1,4 +1,21 @@
 .container{
+  display: flex;
   margin: 0;
   padding: 0;
+}
+
+.row_login{
+ flex-direction: row;
+ justify-content: flex-start;
+}
+
+.col_login{
+  flex-direction: column;
+
+}
+.card{
+  height: 600px;
+  margin: 10px;
+  width: 400px;
+ box-shadow: 6px 15px 25px -1px rgba(0,0,0,0.1);
 }
